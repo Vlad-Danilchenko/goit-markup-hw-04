@@ -161,9 +161,29 @@ body {
 /* hero */
 
 .hero-section{
-    background-color: var(--footer-bg-color);
+    /* outline: 1px solid tomato; */
+
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: linear-gradient(
+        to right, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)        
+    ),
+    url(../images/squoosh/hero-img.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    /* background-color: var(--footer-bg-color); */
     padding: 200px 0;
     text-align: center;
+    background-color: #C4C4C4;;
 }
 
 .hero-title{
@@ -259,6 +279,23 @@ body {
     margin-right: 0;
 }
 
+
+.advantage .list-item::before{
+    display: block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    
+    background: var(--primery-button-color);
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center;
+}
+.list-item.icon-sputnik::before {
+    background-image: url(../images/svg/sputnik.svg) ;
+}
 
 .what_we_can_do{
     padding-bottom: 94px;
