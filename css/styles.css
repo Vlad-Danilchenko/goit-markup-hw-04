@@ -125,7 +125,7 @@ body {
 
 }
 .email{
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
     align-items: center;
@@ -144,6 +144,7 @@ body {
    height: 16px;
    fill: currentColor;
    margin-right: 5px;
+   align-items: baseline;
 }
 
 
@@ -290,20 +291,26 @@ body {
 }
 
 
-.advantage .list-item::before{
+.advantage .bg-icon{
     display: block;
     content: "";
     width: 270px;
     height: 120px;
     border-radius: 4px;
     margin-bottom: 30px;
+    padding: 25px 100px;
     
     background: var(--primery-button-color);
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-size: 70px;
-    background-position: center;
+    background-position: center; */
 }
-.list-item.icon-sputnik::before {
+.icon-advantage{
+   width: 70px;
+   height: 70px;
+
+}
+/* .list-item.icon-sputnik::before {
     background-image: url(../images/svg/sputnik.svg) ;
 }
 .list-item.icon-clock::before{
@@ -314,7 +321,7 @@ body {
 }
 .list-item.icon-cosmos::before{
     background-image: url(../images/svg/cosmos.svg);
-}
+} */
 
 .what_we_can_do{
     padding-bottom: 94px;
@@ -447,7 +454,7 @@ body {
    margin-left: 30px;
 }
 
-.client-item{
+.client-link{
    width: 170px;
    height: 92px;
    padding: 16px 32px;
@@ -456,7 +463,8 @@ body {
    border: 1px solid var(--primery-icon-color);
    border-radius: 4px;
 }
-.client-item:hover{
+
+.client-link:hover{
    color: var(--acent);
    border-color: var(--acent);
 }
@@ -576,10 +584,10 @@ body {
     margin-bottom: 30px;
     border-bottom: 1px solid #EEEEEE;
 }
-.portfolio-item:hover,
+/* .portfolio-item:hover,
 .portfolio-item:focus{
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} */
 .portfolio .portfolio-item:nth-child(3n){
     margin-right: 0;
 }
@@ -588,7 +596,12 @@ body {
 }
 
 .portfolio-link{
+   display: block;
     text-decoration: none; 
+}
+.portfolio-item .portfolio-link:hover,
+.portfolio-item .portfolio-link:focus {
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-link .portfolio-title{
     margin-top: 0;
